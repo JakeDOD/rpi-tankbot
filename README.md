@@ -9,17 +9,17 @@ I am still in development stage, so be warned, it may not work fully. I will do 
 
 ### Usage ###
 
-** Software **
+**Software**
 
 * Install `mjpg-streamer` following this [tutorial](http://wolfpaulus.com/journal/embedded/raspberrypi_webcam)
 * Install the [BCM2835 library](http://www.airspayce.com/mikem/bcm2835/) for compiling the `PWMserver`
 * Apache and PHP are necessary to run the websockets server
 
-** Hardware **
+**Hardware**
 
 This software can be used to interface with any hardware; however, it can only generate PWM on a maximum of 2 pins simultaneously.
 
-** Build **
+**Build**
 
 * place the `server` in `/var/` (this is the default directory, if you use another you will need to alter `build.sh`)
 * add the contents of the `www` folder in `/var/www`
