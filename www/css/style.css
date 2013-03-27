@@ -1,0 +1,74 @@
+#init {
+	background: #01cbbf;
+	color: white;
+	font-family: Arial;
+	margin: 0px;
+}
+
+#loading {
+	height: 200px;
+	width: 150px;
+	margin: 200px auto 0 auto;
+}
+
+#inner {
+	background: url("/images/inner.png");
+	background-size: 150px;
+	background-repeat: none;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	-webkit-animation: rotate-ccw 1.5s linear infinite;
+	-moz-animation: rotate-ccw 1.5s linear infinite;
+}
+
+#outer {
+	background: url("/images/outer.png");
+	background-size: 150px;
+	background-repeat: none;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	-webkit-animation: rotate-cw 8s linear infinite;
+	-moz-animation: rotate-cw 8s linear infinite;
+}
+
+#reveal {
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+	padding-top: 170px;
+	font-weight: bold;
+	-webkit-animation: reveal 2s linear infinite;
+	-moz-animation: reveal 2s linear infinite;
+}
+
+@-webkit-keyframes rotate-ccw {
+    0% 		{-webkit-transform: rotate(360deg); }
+    100% 	{ -webkit-transform: rotate(0); }
+}
+
+@-webkit-keyframes rotate-cw {
+    0% 		{ -webkit-transform: rotate(0); }
+    100% 	{ -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotate-ccw {
+    0% 		{-moz-transform: rotate(360deg); }
+    100% 	{ -moz-transform: rotate(0); }
+}
+
+@-moz-keyframes rotate-cw {
+    0% 		{ -moz-transform: rotate(0); }
+    100% 	{ -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes reveal {
+    0% 		{ width: 75px; }
+    100% 	{ width: 90px; }
+}
+
+@-moz-keyframes reveal {
+    0% 		{ width: 75px; }
+    100% 	{ width: 90px; }
+}
